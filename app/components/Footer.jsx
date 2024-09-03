@@ -30,8 +30,8 @@ function Footer() {
             <li>Services
               <ul className='plus'>
                 {DataService.map((p, index)=>
-                <Link href={`/services/${p.id}`}>
-                  <li key={index}>  {p.title}</li>
+                <Link href={`/services/${p.id}`} key={index}>
+                  <li >  {p.title}</li>
                 </Link>
                 )}
               </ul>
@@ -45,7 +45,7 @@ function Footer() {
           <ul>
             <li><FontAwesomeIcon icon={faEnvelope} /> joeagroup@gmail.com</li>
             <li><FontAwesomeIcon icon={faPhone} /> +225 01 23 45 67</li>
-            <li><FontAwesomeIcon icon={faMapMarkerAlt} /> 123 Rue Exemple, Abidjan, Côte d'Ivoire</li>
+            <li><FontAwesomeIcon icon={faMapMarkerAlt} /> 123 Rue Exemple, Abidjan, Côte d&apos;Ivoire</li>
           </ul>
         </div>
         <div className="follow">
