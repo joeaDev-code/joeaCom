@@ -6,7 +6,7 @@ import {Banner} from './components/Banner'
 
 import Loader from '../components/Loader'
 
-function page() {
+function Page() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -35,4 +35,4 @@ function page() {
   )
 }
 
-export default page;
+export default Page;

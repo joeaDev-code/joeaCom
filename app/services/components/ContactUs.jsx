@@ -6,10 +6,10 @@ function ContactUs() {
     <div id='ContactUs'>
       <div className="container">
         <div className='col'>
-          <h1>Besoin d'aide <br/> et de renseignements ?</h1>
+          <h1>Besoin d&quot;aide <br/> et de renseignements ?</h1>
           <p> Alors renseignez le formulaire </p>
         </div>
-        <div className='col'>
+        <div className="col">
           <form action="" method="post">
             <div className="form-group">
               <label htmlFor="name">Nom Complet</label>
@@ -27,7 +27,7 @@ function ContactUs() {
                 type="email"
                 name="email"
                 id="email"
-                placeholder='Entrez votre adresse électronique ...'
+                placeholder="Entrez votre adresse électronique ..."
                 required
               />
             </div>

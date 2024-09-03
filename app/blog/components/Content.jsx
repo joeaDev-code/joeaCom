@@ -16,8 +16,8 @@ function Content() {
         </h1>
         <div className="container">
         {blogArticles.map(dt=>
-          <Link href={`/blog/${dt.id}`}>
-        <div className="boxBlog" key={dt.id}>
+          <Link href={`/blog/${dt.id}`} key={dt.id}>
+        <div className="boxBlog" >
         <div className="img-container">
             
         </div>

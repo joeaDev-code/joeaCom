@@ -12,13 +12,13 @@ import { motion } from 'framer-motion'
 
 function Banner() {
   return (
-    <div id='BannerBlog'>
+    <div id="BannerBlog">
         <motion.div
           initial={{opacity:0, y:100}}
           whileInView={{opacity:1, y:0}}
           transition={{delay:1.8, duration:1.5, ease:'easeOut'}}
         className="img-container">
-            <Image src={IMG1}/>
+            <Image src={IMG1} alt="image banner"/>
         </motion.div>
         <div className="text-container">
             <h1> NOUS CONTACTER </h1>
@@ -27,7 +27,7 @@ function Banner() {
               whileInView={{y:0, opacity:1}}
               transition={{delay:0.2, duration:1.5, ease:'easeInOut'}}
             
-            >Avez-vous une preoccupation ? Besoind de plus d'information ?</motion.p>
+            >Avez-vous une preoccupation ? Besoind de plus d&apos;information ?</motion.p>
         </div>
     </div>
   )

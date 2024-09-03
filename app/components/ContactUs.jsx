@@ -6,11 +6,11 @@ import 'react-toastify/dist/ReactToastify.css';
 function ContactUs() {
 
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    telephone: '',
+    name: "",
+    email: "",
+    telephone: "",
     subject: "BESOIN D'AIDE",
-    message: ''
+    message: ""
   });
 
   const handleChange = (e) => {
@@ -45,7 +45,7 @@ function ContactUs() {
       <ToastContainer />
       <div className="container">
         <div className='col'>
-          <h1>Besoin d'aide <br/> et de renseignements ?</h1>
+          <h1>Besoin d&apos;aide <br/> et de renseignements ?</h1>
           <p> Alors renseignez le formulaire </p>
         </div>
         <div className='col'>

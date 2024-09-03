@@ -10,7 +10,7 @@ import ContactUs from '@/app/components/ContactUs'
 
 import Loader from '../../components/Loader'
 
-const page = ({params}: { params: { service: string } }) => {
+const Page = ({params}: { params: { service: string } }) => {
 
     const id= Number(params.service)
 
@@ -43,4 +43,4 @@ const page = ({params}: { params: { service: string } }) => {
   )
 }
 
-export default page
+export default Page

@@ -1,23 +1,22 @@
 "use client"
 import React from 'react'
-import Link from 'next/link'
 
 function SectionAbout() {
   return (
-    <div id='SectionAbout'>
+    <div id="title">
         <div className="container">
-            <h1 className='title'> Qui sommes nous ? <span></span></h1>
-            <p>Chez JOEA COM, nous sommes une agence de communication et de marketing dédiée à transformer vos ambitions en succès tangible. Avec une expertise approfondie et une passion pour l'innovation, nous nous engageons à offrir des solutions sur mesure qui répondent aux besoins spécifiques de chaque client. Notre équipe dynamique travaille en étroite collaboration avec vous pour concevoir des stratégies efficaces qui maximisent votre présence et votre impact sur le marché.<br/>
+            <h1 className="title">Qui sommes-nous ? <span></span></h1>
+            <p>
+              Chez JOEA COM, nous sommes une agence de communication et de marketing dédiée à transformer vos ambitions en succès tangibles. Avec une expertise approfondie et une passion pour l&apos;innovation, nous offrons des solutions sur mesure adaptées aux besoins spécifiques de chaque client. Notre équipe dynamique collabore étroitement avec vous pour concevoir des stratégies efficaces, maximisant votre présence et impact sur le marché.<br/><br/>
 
-            Nous combinons créativité et technologie pour vous offrir des services diversifiés, allant de la gestion de vos réseaux sociaux à la création de contenu captivant. Nous sommes spécialisés dans la conception de sites web modernes et intuitifs, conçus pour offrir une expérience utilisateur optimale et refléter fidèlement l'identité de votre marque. En intégrant les dernières tendances en matière de design et de fonctionnalité, nous nous assurons que votre site web soit non seulement esthétique mais aussi performant.<br/>
+              Nous combinons créativité et technologie pour vous proposer des services diversifiés, de la gestion de vos réseaux sociaux à la création de contenu captivant. Nous nous spécialisons dans la conception de sites web modernes et intuitifs, offrant une expérience utilisateur optimale et reflétant fidèlement l&apos;identité de votre marque. En intégrant les dernières tendances en design et fonctionnalité, nous garantissons que votre site web soit à la fois esthétique et performant.<br/><br/>
 
-            Notre approche est basée sur une compréhension approfondie de vos objectifs et de votre marché. Nous mettons en place des stratégies personnalisées pour vous aider à atteindre vos cibles, que ce soit par le biais de publicité en ligne efficace, d'une optimisation SEO avancée ou de la création de contenu engageant. Chaque projet est une opportunité pour nous de démontrer notre capacité à obtenir des résultats mesurables et à apporter une réelle valeur ajoutée.<br/>
+              Notre approche repose sur une compréhension approfondie de vos objectifs et de votre marché. Nous élaborons des stratégies personnalisées pour atteindre vos cibles, que ce soit par la publicité en ligne efficace, l&apos;optimisation SEO avancée, ou la création de contenu engageant. Chaque projet est une occasion de démontrer notre capacité à obtenir des résultats mesurables et à apporter une réelle valeur ajoutée.<br/><br/>
 
-            En travaillant avec JOEA COM, vous bénéficiez d'une équipe d'experts dédiée à votre succès. Nous sommes constamment à l'affût des dernières innovations pour vous offrir des solutions avant-gardistes et adaptées à l'évolution rapide du marché. Découvrez comment nous avons aidé des entreprises comme la vôtre à se démarquer avec succès dans leur secteur.<br/>
+              En travaillant avec JOEA COM, vous bénéficiez d&apos;une équipe d&apos;experts dédiée à votre succès. Nous restons constamment à l&apos;affût des dernières innovations pour vous proposer des solutions avant-gardistes adaptées à l&apos;évolution rapide du marché. Découvrez comment nous avons aidé des entreprises à se démarquer avec succès dans leur secteur.<br/><br/>
 
-            Contactez-nous dès aujourd'hui pour une consultation gratuite et laissez-nous vous montrer comment nous pouvons transformer vos idées en résultats concrets. Avec JOEA COM, vos ambitions prennent vie et votre marque atteint de nouveaux sommets.</p>
-
-            
+              Contactez-nous dès aujourd&apos;hui pour une consultation gratuite et découvrez comment nous pouvons transformer vos idées en résultats concrets. Avec JOEA COM, vos ambitions prennent vie et votre marque atteint de nouveaux sommets.
+            </p>
         </div>
     </div>
   )

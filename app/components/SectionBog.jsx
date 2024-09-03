@@ -15,8 +15,8 @@ function SectionBlog() {
       <p>Explorez nos conseils fitness, nutrition et bien-être pour atteindre vos objectifs de forme physique. Restez informé avec nos articles inspirants et pratiques.</p>
       <div className="container">
         {blogArticles.slice(0,3).map(dt=>
-         <Link href={`/blog/${dt.id}`}> 
-            <div className="boxBlog" key={dt.id}>
+         <Link href={`/blog/${dt.id}`} key={dt.id}> 
+            <div className="boxBlog" >
         <div className="img-container">
         </div>
         <div className="text-container">

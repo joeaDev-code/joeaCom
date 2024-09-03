@@ -18,7 +18,7 @@ export const Banner = ({id}) => {
         <p> {fetchData.subtitle} </p>
         </div>
         <div className="img-bg-container">
-           {fetchData.imageBanner && <Image src={fetchData.imageBanner}/>} 
+           {fetchData.imageBanner && <Image src={fetchData.imageBanner} alt={fetchData.title}/>} 
         </div>
     </div>
   )

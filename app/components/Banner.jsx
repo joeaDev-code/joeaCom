@@ -40,14 +40,14 @@ function Banner() {
       animate={{y:0}}
       transition={{duration:1.5}}
        className="img-banner">
-        <Image src={IMG_BANNER3}/>
+        <Image src={IMG_BANNER3} alt="image banner"/>
       </motion.div>
       <motion.div
       initial={{y:'100vh'}}
       animate={{y:0}}
       transition={{duration:1.5, delay:1.5}}
        className="img-banner">
-        <Image src={IMG_BANNER2}/>
+        <Image src={IMG_BANNER2} alt="image banner"/>
       </motion.div>
       </div>
 
@@ -61,56 +61,6 @@ function Banner() {
           > Contacter</motion.button>
         </Link>
       </div>
-      <div className="text">
-        <motion.p
-          initial={{ opacity: 0, x: 0 }}
-          animate={{ opacity: 1, scale:1.1, color: "#00B2A9" }}
-          transition={{ delay: 6.5, duration: 2 }}
-          // exit={{display: 'none'}}
-        >
-          Marketing
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, x: 0 }}
-          animate={{ opacity: 1, scale:1.1, color: "#003366" }}
-          transition={{ delay: 7.5, duration: 2 }}
-        >
-          Communication
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, x: 0 }}
-          animate={{
-            opacity: 1,
-            scale:1.1,
-            color: "white",
-            textShadow: "2px 2px 2px rgba(0,51,102,0.86)",
-          }}
-          transition={{ delay: 8.5, duration: 2 }}
-        >
-          Infographie
-        </motion.p>
-        <motion.p
-          initial={{ opacity: 0, x: 0 }}
-          animate={{
-            opacity: 1,
-            scale:1.1,
-            color: "black",
-          }}
-          transition={{ delay: 9.5, duration: 2 }}
-        >
-          Et bien d'autre service ...
-        </motion.p>
-      </div>
-      <motion.div className="container-icon"
-        initial={{opacity:0, scale:0.3}}
-        animate={{opacity: 1, scale: 1}}
-        transition={{delay: 11.5, duration: 1.5}}
-      >      
-       
-        <Image src={ICON_MEGAP} className="icon megaphone"/>
-        <Image src={ICON_GRAPH} className="icon design"/>
-        <Image src={ICON_DIGITAL} className="icon digital"/>   
-      </motion.div>
      
     </div>
   );

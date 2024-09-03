@@ -7,12 +7,12 @@ import { DataService } from '../../data/DataService'
 function Testimony({id}) {
     const fetchData = DataService.find((data) => data.id === id);
   return (
-    <div id='Testimony'>
-      <h1 className='title'> Ils nous ont fait confiance ... </h1>
+    <div id="Testimony">
+      <h1 className="title"> Ils nous ont fait confiance ... </h1>
       <div className="container">
-        {fetchData.testimonials.slice(0,2).map(p=>
-          <div className="boxTestimony">
-            <span>"</span>
+        {fetchData.testimonials.slice(0,2).map((p, index)=>
+          <div className="boxTestimony" key={index}>
+            <span>&ldquot;</span>
             <p>{p.feedback}</p>
             <h4>{p.client}</h4>
           </div>

@@ -26,9 +26,9 @@ function Page({ params }: { params: { article: string }}) {
       setIsFixed(scrollPosition > (viewportHeight * 0.6))
     }
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener("scroll", handleScroll)
     // Cleanup event listener on unmount
-    return () => window.removeEventListener('scroll', handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
   // Convertir params.id en nombre si nécessaire
@@ -40,14 +40,14 @@ function Page({ params }: { params: { article: string }}) {
   return (
     <div>
       {fetchArticle ? (
-        <div className='each'>
+        <div className="each">
         <motion.div
           className={`progress-bar ${isFixed ? 'fixed' : ''}`}
           style={{ scaleX }}
         />
           <div className="BannerItemArticle">
-            <h1 className='header'>
-              <Link href={'/blog'}>
+            <h1 className="header">
+              <Link href={"/blog"}>
                 Blog
               </Link>
               </h1>
@@ -55,9 +55,9 @@ function Page({ params }: { params: { article: string }}) {
             <h2>{fetchArticle.description}</h2>
           </div> 
    
-          <div className='content'>
+          <div className="content">
             <div className="img-container">
-                IMAGE NON DISPONIPLE POUR L'INSTANT
+                IMAGE NON DISPONIPLE POUR L&apos;INSTANT
             </div>
             
           <div className="info">
@@ -71,16 +71,16 @@ function Page({ params }: { params: { article: string }}) {
             )}
           </div>
           <div className="navigation">
-            <Link href='/blog'>
-              <button>{'<<'} BLOG</button>
+            <Link href="/blog">
+              <button>{"<<"} BLOG</button>
             </Link>
             <div></div>
             <Link href={`/blog/article/${fetchArticle.id + 1}`}>
-              <button>Prochain article {'>>'}</button>
+              <button>Prochain article {">>"}</button>
             </Link>
           </div>
 
-          <div className='avis'>
+          <div className="avis">
             <div className="container"> 
             <h1> Cet article vous a t-il été utile ?</h1>
             <div className="btn-container">
