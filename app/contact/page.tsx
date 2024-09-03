@@ -3,13 +3,13 @@ import React from 'react'
 import Banner from './components/Banner'
 import Content from './components/Content'
 
-function page() {
+function Page() {
   return (
-    <div>
+    <div id='pageContact'>
       <Banner />
       <Content />
     </div>
   )
 }
 
-export default page
+export default Page

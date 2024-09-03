@@ -72,9 +72,9 @@ function Equipe() {
       <motion.div
           initial={{ opacity: 0, y: 100 }} // État initial
           whileInView={{ opacity: 1, y:0}} // État final selon la visibilité
-          transition={{ duration: 1, delay: 3.5, ease: 'easeInOut' }} // Durée et délai de l'animation
+          transition={{ duration: 1, delay: 2, ease: 'easeInOut' }} // Durée et délai de l'animation
        className="btn-container">
-        <Link href="/start">
+        <Link href="/join">
           <button> NOUS REJOINDRE </button>
         </Link>
       </motion.div>

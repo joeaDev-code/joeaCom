@@ -3,7 +3,7 @@ import React from 'react'
 
 function SectionAbout() {
   return (
-    <div id="title">
+    <div id="SectionAbout">
         <div className="container">
             <h1 className="title">Qui sommes-nous ? <span></span></h1>
             <p>

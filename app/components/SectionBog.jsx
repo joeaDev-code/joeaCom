@@ -32,7 +32,7 @@ function SectionBlog() {
         )}
       </div>
 
-       <a href="/blog"><button> VOIR PLUS </button></a>
+       <Link href="/blog"><button> VOIR PLUS </button></Link>
     </div>
   )
 }

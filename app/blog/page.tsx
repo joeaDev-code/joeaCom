@@ -11,12 +11,10 @@ function Page() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simule un délai de chargement (par exemple pour charger des données)
     const timer = setTimeout(() => {
       setLoading(false); // Cache le loader après 2 secondes
     }, 2000);
 
-    // Cleanup pour éviter les fuites de mémoire
     return () => clearTimeout(timer);
   }, []);
 

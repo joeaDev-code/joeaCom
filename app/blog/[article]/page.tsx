@@ -7,6 +7,8 @@ import { motion, useScroll, useSpring } from 'framer-motion'
 import Link from 'next/link'
 
 import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronCircleRight, faChevronRight, faHome } from '@fortawesome/free-solid-svg-icons'
 
 
 function Page({ params }: { params: { article: string }}) {
@@ -41,16 +43,8 @@ function Page({ params }: { params: { article: string }}) {
     <div>
       {fetchArticle ? (
         <div className="each">
-        <motion.div
-          className={`progress-bar ${isFixed ? 'fixed' : ''}`}
-          style={{ scaleX }}
-        />
           <div className="BannerItemArticle">
-            <h1 className="header">
-              <Link href={"/blog"}>
-                Blog
-              </Link>
-              </h1>
+            
             <h1>{fetchArticle.title}</h1>
             <h2>{fetchArticle.description}</h2>
           </div> 
@@ -72,11 +66,16 @@ function Page({ params }: { params: { article: string }}) {
           </div>
           <div className="navigation">
             <Link href="/blog">
-              <button>{"<<"} BLOG</button>
+              <button>
+                <FontAwesomeIcon className="icon" icon={faHome} />
+                 Articles
+                 </button>
             </Link>
             <div></div>
             <Link href={`/blog/article/${fetchArticle.id + 1}`}>
-              <button>Prochain article {">>"}</button>
+              <button>Prochain article 
+                <FontAwesomeIcon className='icon' icon={faChevronRight} />
+              </button>
             </Link>
           </div>
 

@@ -27,7 +27,7 @@ function Banner() {
               whileInView={{y:0, opacity:1}}
               transition={{delay:0.2, duration:1.5, ease:'easeInOut'}}
             
-            >Avez-vous une preoccupation ? Besoind de plus d&apos;information ?</motion.p>
+            >Avez-vous une preoccupation ? Besoin de plus d&apos;information ?</motion.p>
         </div>
     </div>
   )

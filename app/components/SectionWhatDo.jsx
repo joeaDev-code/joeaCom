@@ -40,7 +40,7 @@ function SectionWhatDo() {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.5, duration: 1.5, ease: "easeInOut" }}
         >
-          {DataService.slice(0, 3).map((item) => (
+          {DataService.slice(3, 6).map((item) => (
             <Link href={`services/${item.id}`} key={item.id}>
               <motion.div className="box">
                 <div className="img-container">

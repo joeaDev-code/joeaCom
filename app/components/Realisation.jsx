@@ -38,8 +38,6 @@ function Realisation() {
         navigation
         Autoplay={true}
         pagination={{ clickable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log("slide change")}
         className="cardContainer"
       >
         <SwiperSlide className="card">Project 1</SwiperSlide>

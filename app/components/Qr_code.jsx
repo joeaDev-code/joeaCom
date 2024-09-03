@@ -10,7 +10,7 @@ const Qr_code = () => {
     <div id="QR_code">
             <div className="container">  
             <QRCode
-              value="http://192.168.1.8:3001"
+              value="https://joea-com.vercel.app/"
               size={100}
               fgColor="#003366" // Couleur du QR Code
               level="L" // Niveau de correction d'erreur ('L', 'M', 'Q', 'H')

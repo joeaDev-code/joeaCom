@@ -21,7 +21,7 @@ function Faq() {
     }, [isClick])
   return (
     <div className='faq-container'>
-        <h1 className='title'> Question Frequente </h1>
+        <h1 className='title'> Questions frequentes </h1>
         {faqData.slice(0,5).map((data, index)=>
         <div className="boxFaq" key={index}>
             <div className="question" onClick={()=>handleClick(data.id)}>
