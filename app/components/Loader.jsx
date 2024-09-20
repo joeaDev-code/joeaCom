@@ -1,6 +1,5 @@
 // components/Loader.js
 import React from 'react';
-import '../loader.scss'; // Assurez-vous que le fichier CSS correct est importé
 
 function Loader() {
   return (

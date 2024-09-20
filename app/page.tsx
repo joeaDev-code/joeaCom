@@ -10,7 +10,7 @@ import ContactUs from './components/ContactUs';
 import SectionBlog from './components/SectionBog';
 import Qr_code from './components/Qr_code'
 import Loader from './components/Loader'; // Importez le Loader
-
+import './loader.scss'
 
 export default function Home() {
   const [loading, setLoading] = useState(true);
