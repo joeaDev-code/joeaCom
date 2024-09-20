@@ -8,21 +8,6 @@ import Content from './components/Content'
 import Loader from '../components/Loader'
 
 function Page() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false); // Cache le loader après 2 secondes
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) {
-    return <Loader />; // Affiche le loader si le site est en cours de chargement
-  }
-
-  // Affiche le contenu de la page une fois le chargement terminé
   return (
     <div>
       <Banner />
