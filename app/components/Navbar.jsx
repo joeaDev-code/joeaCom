@@ -8,6 +8,10 @@ import { faBars, faXmark, faChevronDown } from '@fortawesome/free-solid-svg-icon
 
 import { DataService } from '../data/DataService';
 
+import Image from 'next/image';
+
+import Logo from '../assets/logo/logo.png'
+
 const Navbar = () => {
   const [nameNav, setNameNav] = useState('ACCUEIL');
   const navbarRef = useRef(null);
@@ -75,18 +79,16 @@ const Navbar = () => {
 
   return (
     <div ref={navbarRef} id='Navbar'>
-      <div className='logo'>
         <Link href='/' onClick={() => { setNameNav('ACCUEIL'); handleLinkClick(); }}>
-          <span>JOEA <b>.</b></span><span>COM</span>
+          <Image alt='logo' src={Logo} className='logo'/>
         </Link>
-      </div>
       <ul className={isMobile ? 'menu responsive' : 'menu'} ref={menuNavRef}>
         <Link href='/' onClick={() => { setNameNav('ACCUEIL'); handleLinkClick(); }}>
           <li className={pathname === '/' ? 'active' : ''}>ACCUEIL</li>
         </Link>
         <div className='dropdownContainer'>
           <li className={pathname.startsWith('/services') ? 'active dropdownBtn' : 'dropdownBtn'} onClick={handleDropdownToggle}>
-            SERVICES <FontAwesomeIcon icon={faChevronDown} />
+            SERVICES <FontAwesomeIcon icon={faChevronDown} className="icon-dropdown"/>
             {showDropdownMenu && (
               <ul className='dropdownMenu'>
                 {DataService.map(item => (

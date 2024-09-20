@@ -3,7 +3,6 @@ import './index.scss';
 import './loader.scss';
 
 import dynamic from 'next/dynamic';
-import Loader from "./components/Loader";
 import { Suspense } from "react";
 import Loading from "./Loading";
 

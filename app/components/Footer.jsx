@@ -14,12 +14,14 @@ import TW_ICON from '../assets/icons/twitter-icon.png'
 
 import Image from 'next/image'
 
+import Logo from '../assets/logo/logo.png'
+
 function Footer() {
   return (
     <div id='Footer'>
       <div id='logo'>
         <Link href='/' onClick={() => setNameNav('')}>
-          <h1 className='item'><span>JOEA <b>.</b></span><span>COM</span></h1>
+          <Image src={Logo} alt='logo' className='logo'/>
         </Link>
       </div>
       <div className="container">

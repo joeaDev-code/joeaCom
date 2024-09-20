@@ -1,46 +1,36 @@
-'use client'
+'use client';
 
-import React, { useEffect, useState } from 'react'
+import React from 'react';
+import { Banner } from '../components/Banner';
+import { Content } from '../components/Content';
+import { Tarif } from '../components/Tarif';
+import Testimony from '../components/Testimony';
+import ContactUs from '@/app/components/ContactUs';
+import { DataService } from '@/app/data/DataService';
+import Head from 'next/head'; // Importer le composant Head de Next.js
 
-import { Banner } from '../components/Banner'
-import { Content} from '../components/Content'
-import {Tarif} from '../components/Tarif'
-import Testimony from '../components/Testimony'
-import ContactUs from '@/app/components/ContactUs'
+const Page = ({ params }: { params: { service: string } }) => {
+  const id = Number(params.service);
 
-import Loader from '../../components/Loader'
+  // Trouver le service correspondant via l'id
+  const fetchService = DataService.find((data) => data.id === id);
 
-const Page = ({params}: { params: { service: string } }) => {
-
-    const id= Number(params.service)
-
-    
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    // Simule un délai de chargement (par exemple pour charger des données)
-    const timer = setTimeout(() => {
-      setLoading(false); // Cache le loader après 2 secondes
-    }, 2000);
-
-    // Cleanup pour éviter les fuites de mémoire
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) {
-    return <Loader />; // Affiche le loader si le site est en cours de chargement
-  }
-
-  // Affiche le contenu de la page une fois le chargement terminé
+  console.log(fetchService?.title)
   return (
-    <div>
-        <Banner id={id} /> 
-        <Content id={id}/>
-        <Tarif id={id}/>
-        <Testimony  id={id}/>
+    <>
+      {/* Utilisation de Head pour définir dynamiquement le titre de l'onglet */}
+      <head>
+        <title>{fetchService ? fetchService.title : 'Service'}</title>
+      </head>
+      <div> 
+        <Banner id={id} />
+        <Content id={id} />
+        <Tarif id={id} />
+        <Testimony id={id} />
         <ContactUs />
-    </div>
-  )
-}
+      </div>
+    </>
+  );
+};
 
-export default Page
+export default Page;
